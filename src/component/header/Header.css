@@ -1,0 +1,168 @@
+/* ---------- OVERLAY ---------- */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent */
+  z-index: 900; /* below menu, above content */
+}
+
+/* ---------- HEADER ---------- */
+.div-nav {
+  width: 100%;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 0;
+}
+
+/* Navigation Container */
+.nav-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+  position: relative;
+}
+
+/* Logo */
+.img-nav {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.img-nav:hover {
+  transform: scale(1.1);
+}
+
+/* Nav Links */
+.ul-nav {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.ul-nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.ul-nav li a:hover {
+  color: hsl(18, 97%, 48%);
+}
+
+/* Active underline */
+.underline a {
+  border-bottom: 2px solid #ffffff;
+  color: #fffa65;
+}
+
+/* Desktop Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.butt,
+.login {
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.butt {
+  background-color: #25d366;
+}
+
+.butt:hover {
+  background-color: #1da851;
+  transform: translateY(-2px);
+}
+
+.login {
+  background-color: #ff4757;
+}
+
+.login:hover {
+  background-color: #e84118;
+  transform: translateY(-2px);
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: white;
+  z-index: 1100;
+}
+
+/* Mobile Buttons inside menu */
+.mobile-buttons {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 700px) {
+  .ul-nav {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100vh;
+    width: 250px;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    border-radius: 0 0 0 10px;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  /* Slide-in menu */
+  .ul-nav.active {
+    right: 0;
+  }
+
+  .ul-nav li {
+    margin: 0.5rem 0;
+  }
+
+  /* Show buttons inside mobile menu */
+  .mobile-buttons {
+    display: flex;
+  }
+
+  /* Hide desktop buttons on mobile */
+  .nav-buttons {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
