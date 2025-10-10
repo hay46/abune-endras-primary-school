@@ -22,7 +22,7 @@ function Hero_page() {
               <span className="span-me">ABUNE ENDIRASS</span> PRIMARY SCHOOL
             </h1>
             <h2 className="chiled animate-h2">
-              Every child is a clever student
+              every child through quality education, creativity, and discipline.
             </h2>
             <h3 className="school animate-h3">
               ወአንሰ ተሰየምኩ ንጉስ በላአሌሆሙ በዮን በደብረ መደሱ
