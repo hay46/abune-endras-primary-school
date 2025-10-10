@@ -119,7 +119,7 @@
 .hero-btn-outline {
   padding: 10px 22px;
   font-size: 1rem;
-  border-radius: 30px;
+  border-radius: 31px;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -145,7 +145,7 @@
 
 .hero-btn-outline:hover {
   background-color: #fff;
-  color: #000;
+  color: #250505;
   transform: scale(1.05);
 }
 
