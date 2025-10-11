@@ -56,17 +56,17 @@
   text-decoration: none;
   color: #ffffff;
   font-weight: 600;
-  transition: color 0.3s;
+  transition: color 0.4s;
 }
 
 .ul-nav li a:hover {
-  color: hsl(18, 97%, 48%);
+  color: hsl(18, 75%, 53%);
 }
 
 /* Active underline */
 .underline a {
   border-bottom: 2px solid #ffffff;
-  color: #fffa65;
+  color: #bbb511;
 }
 
 /* Desktop Buttons */
