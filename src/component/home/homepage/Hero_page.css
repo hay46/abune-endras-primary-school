@@ -187,12 +187,12 @@
 /* ===== ABOUT SECTION ===== */
 .about-section {
   background: #f7f3f3;
-  padding: 60px 20px;
+  padding: 59px 20px;
   text-align: center;
 }
 
 .about-section h2 {
-  color: #222;
+  color: #2222;
   font-size: 2rem;
   margin-bottom: 20px;
 }
